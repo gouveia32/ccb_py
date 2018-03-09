@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'taggit',
     
     'ccb_py.core',
+    'ccb_py.clientes',
     'ccb_py.accounts',
 ]
 
