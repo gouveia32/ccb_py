@@ -14,8 +14,7 @@
 <div class="header">
     <div class="home-menu pure-menu pure-menu-open pure-menu-horizontal pure-menu-fixed">
         <img src="{% static 'img\\PF_Logo_181_55.png' %}" alt="ccbe" class="pure-menu-heading" 
-            style="width:165px;height:50px;"/>
-    
+            src="{% url 'core:home' %}"/>
         <ul>
             <li class="pure-menu-selected"><a href="{% url 'core:home' %}">Início</a></li>
             <li><a href="{% url 'core:contact' %}">Contato</a></li>

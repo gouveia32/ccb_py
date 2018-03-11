@@ -7,22 +7,29 @@
     <div class="pure-u-1">
         <div class="l-box">
             <h4 class="content-subhead">Listagem de Clientes</h4>
-            <p>Abaixo a lista de clientes disponíveis na plataforma</p>
         </div>
     </div>
 </div>
 {% for cliente in clientes %}
 <div class="pure-g-r content-ribbon">
-    <div class="pure-u-1-3">
+    <div class="pure-u-2-5">
         <div class="l-box">
-            <h4 class="content-subhead"><a href="{{ cliente.get_absolute_url }}" title="">{{ cliente.nome }}</a></h4>
-            {{ cliente.obs|linebreaks }}
+            <h5 class="content-subhead"><a href="{% url 'clientes:details' pk=cliente.pk %}" title="">{{ cliente.nome }}</a></h5>
         </div>
     </div>
-    <div class="pure-u-2-3">
+    <div class="pure-u-1-5">
         <div class="l-box">
-            <h4 class="content-subhead"><a href="{{ cliente.get_absolute_url }}" title="">{{ cliente.contato_nome }}</a></h4>
-            {{ cliente.obs|linebreaks }}
+            <h5 class="content-subhead"><a href="" title="">{{ cliente.contato_nome }}</a></h5>
+        </div>
+    </div>
+    <div class="pure-u-1-5">
+        <div class="l-box">
+            <h5 class="content-subhead"><a href="" title="">{{ cliente.telefone1 }}</a></h5>
+        </div>
+    </div>
+    <div class="pure-u-1-5">
+        <div class="l-box">
+            <h5 class="content-subhead"><a href="" title="">{{ cliente.email }}</a></h5>
         </div>
     </div>
 </div>

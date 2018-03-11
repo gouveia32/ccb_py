@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="well">
+    <div class="panel-heading">
+        <div class="row">
+            <table>
+                <caption>
+                    <p>Detalhes do cliente:<strong>{{ cliente.nome}}</strong></p>
+                <br>
+                </caption>
+                    <tbody>
+                    <tr>
+                    <td>Contato:</td>
+                    <td>{{cliente.contato_nome}} ({{cliente.contato_funcao}})</td>
+                    </tr>
+                    <tr>
+                    <td></td>
+                    </tr>
+                    <tr>
+                    <td>Endere&ccedil;o:</td>
+                    <td>{{cliente.endereco}}</td>
+                    </tr>
+                    <tr>
+                    <td>&nbsp;</td>
+                    <td>{{cliente.cidade}}&nbsp; {{cliente.estado}}&nbsp;&nbsp; CEP:{{cliente.cep}}</td>
+                    </tr>
+                    <tr>
+                    <td>&nbsp;</td>
+                    <td style="width: 544.617px; height: 18px;">&nbsp;</td>
+                    </tr>
+                    </tbody>
+                    </table>
+        </div>
+    </div>
+</div>
+{% endblock %}

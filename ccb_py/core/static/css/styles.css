@@ -11,16 +11,16 @@ a {
     color: #3b8bba;
 }
 .content {
-    padding-top: 2em;
+    padding-top: 5em;
 }
 .l-box {
-    padding: 1em;
+    padding: 0.1em;
 }
 .header {
     margin: 0 0;
 }
 .header .pure-menu {
-    padding: 0.5em;
+    padding: 0.1em;
     background-color: #2d3e50;
 }
 .header .pure-menu a {
@@ -39,7 +39,7 @@ a {
     float: right;
 }
 .home-menu {
-    padding: 0.5em;
+    padding: 0.1em;
     text-align: left;
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
 }
